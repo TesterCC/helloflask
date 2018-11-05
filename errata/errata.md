@@ -11,7 +11,7 @@
 
 下面是《Flask Web开发实战》的勘误信息。我在helloflask.com上创建了一个镜像勘误页面，阅读体验更好，请访问 http://helloflask.com/book/errata 查看。
 
-最后更新：2018/10/27
+最后更新：2018/11/02
 
 ## 贡献指南
 
@@ -72,8 +72,8 @@
 | 5.5.3 | P164 | 代码清单5-13上面 | 都定义在“多”这一侧，即City类中 | 都定义在“多”这一侧，即Citizen类中 | 笔误 |
 | 5.5.4 | P165 | 第2个代码块第6行 | - | 第6行`>>> china.capital = beijing`移动到第3行 | 笔误 |
 | 5.5.4 | P165 | 第2个代码块第8行 | `<Capital 1>` | `<Capital u'Beijing'>` | 笔误 |
-| 5.5.4 | P166 | 第2个代码块第10行 | `u'China'` | `<Country u'China'>` | 笔误 |
-| 5.5.4 | P166 | 第2个代码块第11行 | `name'Tokyo'` | `name='Tokyo'` | 笔误 | 18.9.26 |
+| 5.5.4 | P166 | 第1个代码块第2行 | `u'China'` | `<Country u'China'>` | 笔误 |
+| 5.5.4 | P166 | 第1个代码块第3行 | `name'Tokyo'` | `name='Tokyo'` | 笔误 | 18.9.26 |
 | 5.7.1.2 | P174 | ”delete-orphan“小节上面第1个代码块第1行 | `Post.quer2y.get(2)` | `Post.query.get(2)` | 审校错误。 |
 | 5.7.2 | P176 | 代码清单5-18下第1行 | targe | target | 笔误 | 18.9.28 |
 | 5.7.2 | P177 | 最后1个代码块上面 | 参数name | 参数named | 笔误 | 18.9.28 |
@@ -123,6 +123,7 @@
 | 1.3.3 | P18 | ”1.3.3“小节第1行 | Enviroment  | Environment | 拼写错误 |
 | 2.2.3 | P34 | 图2-5 |  | 地址栏的地址应为/nothing，和描述对应。图中的/foo在后面实际被定义了 | 笔误 | 18.9.28 |
 | 2.3.3 | P47 | 表2-10后面的第1个附注段落 | Respone | Response | 笔误。拼写错误 |
+| 2.5.4.1.(2) | P67 | 第二段文字第二行 | 设为 “';drop table users; --” | 设为 “';drop table students; --” | 笔误 |18.11.2 |
 | 2.5.4.1.(3) | P67 | ”主要防范方法“小节第1个代码块 | `db.execute('SELECT * FROM students WHERE password=?, password)` | `db.execute('SELECT * FROM students WHERE password=?', password)` | 笔误。字符串漏写右侧关闭引号 |
 | 3.1 | P77 | 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为 https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
 | 3.3.2 | P89 | 第1个代码块上面的文字第2行 | `_macors.html` | `_macros.html` | 笔误 |
@@ -143,6 +144,7 @@
 | 8.2.1.3 | P237 | 代码清单8-9第10行 | | 缩进少一格 | 排版错误 | 18.10.18 |
 | 8.3.5 | P264 | 代码清单8-29第12行 | `(%Y-%m-%dT%H:%M:%SZ')` | `('%Y-%m-%dT%H:%M:%SZ')` | 笔误，漏掉左侧引号 | 18.10.27 |
 | 8.7.2.1 | P293 | 图8-16上面的提示段落 | HTmL | HTML | 审校错误，大小写错误 |
+| 9.13 | - | 9.13小节最后代码清单上面的文字 | innit_app() | init_app() | 笔误 | 18.11.04 |
 | 10.2.5 | P438 | 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
 | 10.3.1.4 | P443 | “10.3.2”小节上面段落倒数第3行 | RSET | REST | 笔误 |
 | 10.3.3.5 | P453 | 代码清单10-13下面的提示段落最后1行 | flask-restless | Flask-Restless | 大小写错误 |
