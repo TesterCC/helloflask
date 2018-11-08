@@ -7,6 +7,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 """
 “使用 app.route 装饰器注册视图函数是首选方法，但不是唯一的方法”
 
@@ -26,7 +27,7 @@ def say_hello():
     return '<h1>Hello, Flask!</h1>'
 
 
-# P76 Flask Web开发实战入门、进阶与原理解析
+# P76 Flask Web开发实战入门、进阶与原理解析    # 因为flask也自带转义，所以也没那么容易被注入
 @app.route('/greet/<name>')
 def greet(name):
     return '<h1>Hello, <i>%s</i>!</h1>' % name
