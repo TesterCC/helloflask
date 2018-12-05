@@ -27,7 +27,8 @@ def say_hello():
     return '<h1>Hello, Flask!</h1>'
 
 
-# P76 Flask Web开发实战入门、进阶与原理解析    # 因为flask也自带转义，所以也没那么容易被注入
+# P76-77 Flask Web开发实战入门、进阶与原理解析    # 因为flask也自带转义，所以也没那么容易被注入
+@app.route('/greet/', defaults={'name': 'Pen Tester'})   # 不加后面的斜杠，127.0.0.1:5555/greet/访问会报错
 @app.route('/greet/<name>')
 def greet(name):
     return '<h1>Hello, <i>%s</i>!</h1>' % name
