@@ -13,7 +13,7 @@
 
 你可以访问本书主页[http://helloflask.com/book](http://helloflask.com/book)查看本书的资源索引、目录、购买链接等详细信息。
 
-本书相关项目的源码建议你按照书中的指导使用Git克隆到本地，如果克隆速度过慢，可以点击<a href="http://helloflask.com/downloads/helloflask-projects-18-8-29.zip" target="_blank" download>这里</a>下载源码合集文件。
+本书相关项目的源码建议你按照书中的指导使用Git克隆到本地，如果克隆速度过慢，可以点击<a href="http://helloflask.com/downloads/helloflask-projects.zip" target="_blank" download>这里</a>下载源码合集文件。
 
 ## 勘误 & FAQ & 可改进实现 & 版本更新记录
 
@@ -93,7 +93,7 @@ $ flask run
 另外，你也可以通过下面的途径来分享和推荐本书：
 
 * 直接向朋友或同事推荐
-* 在新浪微博、Twitter或知乎等平台分享并@我（新浪微博@李辉Grey，Twitter@greylihui，知乎@李辉）
+* 在新浪微博、Twitter或知乎等平台分享
 * 在你的博客或其他平台写文章分享你的阅读心得
 * 在本书的[豆瓣图书页面](https://book.douban.com/subject/30310340/)写短评或书评
 * 在知乎问题“[如何评价《Flask Web开发实战》](https://www.zhihu.com/question/296048455)？”下撰写答案
