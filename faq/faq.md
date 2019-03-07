@@ -1,15 +1,17 @@
-[主页](https://github.com/greyli/helloflask)
-/ [勘误](https://github.com/greyli/helloflask/blob/master/errata/errata.md)
-/ FAQ
-/ [可改进实现](https://github.com/greyli/helloflask/blob/master/improvement/improvement.md)
-/ [版本更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)
-/ [示例程序](https://github.com/greyli/helloflask/blob/master/demos/)
-/ [HelloFlask.com](http://helloflask.com)
-/ [本书主页](http://helloflask.com/book)
-
 # FAQ
 
 如果你想提一个问题，请创建Issue。
+
+### 执行 `flask run` 提示找不到程序
+
+执行以下检查：
+* 安装了所有依赖，包括开发依赖（使用 `pipenv install --dev`）
+* 当前目录在项目根目录，对于第一部分的 6 个示例程序来说，切换到每个程序各自的根目录。遵循每章开头的安装命令。
+* 确保没有在上层目录创建 .env 和 .flaskenv 文件。
+
+### 执行 `flask run` 报错 `AttributeError: 'module' object has no attribute 'SSLContext'`
+
+升级 Python 到 2.7.9 或以上版本。
 
 ### 执行 flask shell 命令的时候，怎么调用 ipython，而不是默认的 Python Shell?
 

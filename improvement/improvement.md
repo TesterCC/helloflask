@@ -1,12 +1,3 @@
-[主页](https://github.com/greyli/helloflask)
-/ [勘误](https://github.com/greyli/helloflask/blob/master/errata/errata.md)
-/ [FAQ](https://github.com/greyli/helloflask/blob/master/faq/faq.md)
-/ 可改进实现
-/ [更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)
-/ [示例程序](https://github.com/greyli/helloflask/blob/master/demos/)
-/ [HelloFlask.com](http://helloflask.com)
-/ [本书主页](http://helloflask.com/book)
-
 # 可改进的实现
 
 下面是《Flask Web开发实战》的可改进实现。书中的第二部分的程序编写时需要同时写作书稿，时间上比较仓促，没有深入思考程序的设计与实现。
@@ -17,41 +8,11 @@
 
 ## 文本描述与章节安排等
 
-### 前言和附录中的勘误URL
-
-GitHub上的勘误文件阅读体验不太好，而且部分地区访问较慢，我在helloflask创建了一个镜像勘误页面，可以将前言和附录中的勘误URL改为 http://helloflask.com/book/errata 。
-
-### 介绍Git标签部分容易产生误解
-
-在前言中介绍Git基本用法中的列出Git标签部分时，因为作为示例的helloflask并没有包含Git标签，所以这里容易产生误解，应该添加一个说明。
-
-### 关于导入语句
-
-为了节省篇幅，除非是第一次出现的类和函数等接口，导入语句都省略掉了。对于某些交互式代码块，添加必要的导入语句会更友好。包含下面这些：
-
-6.2.3.1 P186 “创建发信对象”下面的第 1 个代码块，在最前插入一行：
-```py
->>> import os
-```
-
-7.5 P214 代码清单7-8：
-```py
-from sayhello import db
-from sayhello.models import Message
-```
-
-8.2.1 P237 代码清单8-10
-```py
-import random
-```
-
 ### 第1章Pipenv相关介绍
 
 * 加入使用第三方PyPI源的方法介绍，包括修改Pipfile、通过环境变量设置以及通过命令行选项设置。
-* 去掉在Windows中执行pipenv shell激活虚拟环境不显示环境提示信息的段落。
-* PyCharm从2018.2版本起提供了对Pipenv的支持，第一章相关内容可以进行改写。
 * 增加对旧版本PyCharm启动配置的说明。
-
+* pipenv update 命令会更新所有依赖包，等待这个行为改变，或添加提示在第 7 页。
 
 ### 第1章和第8章对于FLASK_APP合法值的描述
 
@@ -75,68 +36,17 @@ def choose_a_number():
     ...
 ```
 
-### 第3章空白控制示例代码
-
-这部分示例代码逻辑上不正确，3.4.1 P93 部分的4个代码块依次需要更改为：
-
-```html
-<div>
-{% if True %}
-    <p>Hello!</p>
-{% endif %}
-</div>
-```
-
-```html
-<div>
-
-    <p>Hello!</p>
-
-</div>
-```
-
-```html
-<div>
-{% if True -%}
-    <p>Hello!</p>
-{%- endif %}
-</div>
-```
-
-```html
-<div>
-    <p>Hello!</p>
-</div>
-```
-
-### 第3章3.3.2最后的两个列表
-
-* 相关Issue：https://github.com/greyli/helloflask/issues/26
-* 贡献者：@[BobcatsII](https://github.com/BobcatsII)
-
-描述中使用了“第一个列表的2、3、4项”的表达，为了更好的定位，这里的两个列表应该使用有序标号。
-
 ### 第3章介绍宏的部分添加关于kwargs和varargs的提示
 
 这部分内容容易让人疑惑，书中没有详细介绍它们，详情见FAQ中相关问题。
 
-### 第3章3.2.5中关于自定义环境的描述
+### 第 5 章
 
-第一个注意段落下的这句“这通过向对应的字典属性中添加一个键值对实现，传入模板的名称作为键，对应的函数对象或变量作为值。”
-
-其中的“传入模板的名称作为键”，可以补全前面隐藏的动词，从而避免误解，即“使用传入模板的名称作为键”。
-
-### 第10章开头的启动命令
-
-在本章开头给出的初始化命令应该加入`flask translate compile`，以便生成MO文件，让程序中的语言切换生效。因为这个命令对应的内容在10.2.4，这里可以添加一句提示。
+* 表 5-2 下面简单介绍 URI 的格式，添加对 MySQL 使用不同 Python 接口库的 URI 变化说明。 
 
 ### 第14章部署后更新程序添加说明
 
 14.4.8添加一个小提示，提示可以直接使用`supervisorctl restart`命令。确认两者的区别，顺便添加reload的说明。
-
-### 后记
-
-拿到书才发现，编辑把我的后记删掉了。因为成本问题，临时妥协的解决方法是在重印时稍加修改后放到前言最后的空白处。尽管如此，还是希望有机会添加一个后记。
 
 ## 程序设计与实现
 
@@ -183,6 +93,32 @@ roles_permissions_map = {
 }
 ```
 
+### 关于发送验证邮件的设计
+
+目前更合理的主流设计是注册的时候不发确认邮件，等用户自行登录后，显示提示需要确认邮件，用户点击发送邮件按钮后再发送邮件。
+
+
+### 禁止锁定和封禁协管员和管理员
+
+* 相关 Issue： https://github.com/greyli/albumy/issues/7
+* 相关 Commit： https://github.com/greyli/albumy/commit/943829b819b7bda6921d6c0fe277c75cd6a98033
+* 主要描述：在用户后台管理，不对管理员和协管员显示封禁锁定按钮，同时在对应视图进行检查。
+
+以锁定为例，原代码：
+```py
+user.lock()
+flash('Account locked.', 'info')
+```
+修改为：
+```py
+if user.role.name in ['Administrator', 'Moderator']:
+    flash('Permission denied.', 'warning')
+else:
+    user.lock()
+    flash('Account locked.', 'info')
+```
+封禁处理类似。模板中处理类似。
+
 ### bluelog
 
 #### 虚拟数据中相关代码的优化
@@ -190,6 +126,10 @@ roles_permissions_map = {
 * 相关Issue：https://github.com/greyli/bluelog/issues/1
 * 贡献者：@[AngelLiang](https://github.com/AngelLiang)
 * 主要描述：「尽量使虚拟数据接近真实的数据」。虚拟数据中生成的评论时间应该晚于文章时间，评论回复时间应该晚于评论时间，并且评论和回复应关联同一篇文章。不过由于虚拟数据主要目的是展示或测试视觉效果，所以不必把太多精力放在这里。
+
+### 主页评论数量改进
+
+https://github.com/greyli/bluelog/issues/3
 
 ### CatChat
 
@@ -214,3 +154,119 @@ roles_permissions_map = {
 
 * 封面的图片颜色和设计图相比有些失真，需要完善。
 * 图片可以再大一点。
+
+## 第 1 版第 3 次印刷（2019/4/1）更新
+
+下面的内容已经在 1-3 版本中修正。
+
+### 关于导入语句
+
+为了节省篇幅，除非是第一次出现的类和函数等接口，导入语句都省略掉了。对于某些交互式代码块，添加必要的导入语句会更友好。包含下面这些：
+
+7.5 P214 代码清单7-8：
+```py
+from sayhello import db
+from sayhello.models import Message
+```
+
+8.2.1 P237 代码清单8-10
+```py
+import random
+```
+
+### 第 5 章
+
+* 表 5-6 get() 等方法接受的参数 ident 改为 id。
+* 表 5-7 第一列的标题改为“过滤方法”。
+
+### 第 6 章 
+
+* 6.1.1 P181 代码清单6-1 第 9-13 行参数对去掉等号两边的空格。
+
+### 第 8 章
+
+P275 该小节最后添加一段提示文字：
+
+提示 在 fakes.py 脚本里的 fake_admin() 函数中，我们需要在 admin 对象创建后，为虚拟用户记录设置密码，添加后面的代码：admin.set_password('helloflask')。
+
+### 第3章3.3.2最后的两个列表
+
+* 相关Issue：https://github.com/greyli/helloflask/issues/26
+* 贡献者：@[BobcatsII](https://github.com/BobcatsII)
+
+描述中使用了“第一个列表的2、3、4项”的表达，为了更好的定位，这里的两个列表应该使用有序标号。1-2 版本反馈给编辑，但是没有改，或许可以把这句改为“上面第一个列表的第2、3、4项”。
+
+## 第 1 版第 2 次印刷（2019/1/1）更新
+
+下面的内容已经在 1-2 版本中修正。
+
+### 前言和附录中的勘误URL
+
+GitHub上的勘误文件阅读体验不太好，而且部分地区访问较慢，我在helloflask创建了一个镜像勘误页面，可以将前言和附录中的勘误URL改为 http://helloflask.com/book/errata 。
+
+### 介绍Git标签部分容易产生误解
+
+在前言中介绍Git基本用法中的列出Git标签部分时，因为作为示例的helloflask并没有包含Git标签，所以这里容易产生误解，应该添加一个说明。
+
+### 完善导入
+
+6.2.3.1 P186 “创建发信对象”下面的第 1 个代码块，在最前插入一行：
+```py
+>>> import os
+```
+
+### 第1章Pipenv相关介绍
+
+* 去掉在Windows中执行pipenv shell激活虚拟环境不显示环境提示信息的段落。
+* PyCharm从2018.2版本起提供了对Pipenv的支持，第一章相关内容可以进行改写。
+
+
+### 第3章空白控制示例代码
+
+这部分示例代码逻辑上不正确，3.4.1 P93 部分的4个代码块依次需要更改为：
+
+```html
+<div>
+{% if True %}
+    <p>Hello!</p>
+{% endif %}
+</div>
+```
+
+```html
+<div>
+
+    <p>Hello!</p>
+
+</div>
+```
+
+```html
+<div>
+{% if True -%}
+    <p>Hello!</p>
+{%- endif %}
+</div>
+```
+
+```html
+<div>
+    <p>Hello!</p>
+</div>
+```
+
+### 第3章3.2.5中关于自定义环境的描述
+
+第一个注意段落下的这句“这通过向对应的字典属性中添加一个键值对实现，传入模板的名称作为键，对应的函数对象或变量作为值。”
+
+其中的“传入模板的名称作为键”，可以补全前面隐藏的动词，从而避免误解，即“使用传入模板的名称作为键”。
+
+
+### 第10章开头的启动命令
+
+在本章开头给出的初始化命令应该加入`flask translate compile`，以便生成MO文件，让程序中的语言切换生效。因为这个命令对应的内容在10.2.4，这里可以添加一句提示。
+
+
+### 后记
+
+拿到书才发现，编辑把我的后记删掉了。因为成本问题，临时妥协的解决方法是在重印时稍加修改后放到前言最后的空白处。尽管如此，还是希望有机会添加一个后记。（在 1-2 版本改为放到前言最后的空白处。）

@@ -1,24 +1,26 @@
-[主页](https://github.com/greyli/helloflask)
-/ [勘误](https://github.com/greyli/helloflask/blob/master/errata/errata.md)
-/ [FAQ](https://github.com/greyli/helloflask/blob/master/faq/faq.md)
-/ [可改进实现](https://github.com/greyli/helloflask/blob/master/improvement/improvement.md)
-/ 版本更新记录
-/ [示例程序](https://github.com/greyli/helloflask/blob/master/demos/)
-/ [HelloFlask.com](http://helloflask.com)
-/ [本书主页](http://helloflask.com/book)
-
 # Changelog
 
 ## helloflask仓库变更
-
-### 2018-9-12
-
-* 因为勘误的表格太宽，在GitHub显示不全，需要横向滚动查看。在helloflask.com创建了一个镜像页面： helloflask.com/book/errata
 
 ### 2018-10-27
 
 * 勘误分成两部分，一部分是影响理解和程序运行的错误，另一部分是无关紧要的拼写等错误。读者可以只修正第一类错误。
 * 重新调整每一个勘误的位置描述，消除歧义，现在既可以通过页数出发定位，也可以通过章节号出发定位，兼顾了纸书和电子书。
+
+### 2018-9-12
+
+* 因为勘误的表格太宽，在GitHub显示不全，需要横向滚动查看。在helloflask.com创建了一个镜像页面： http://helloflask.com/book/errata
+
+
+### 2019-1-13
+
+* 勘误分为 1-2 和 1-1 两个页面，默认显示 1-2 勘误。
+* 因为电子书会随着纸书重印而推送更新，为了更方便整理勘误，勘误表里的位置描述不再考虑电子书位置。目前电子书的内容与 1-2 版本相同，预计 1-3 版本将会修复大部分错误。
+
+
+### 2019-3-5
+
+* 勘误添加 1-3 页面。
 
 ## 纸书变更
 
@@ -32,13 +34,28 @@
 
 此版本中的错误见勘误文件的对应部分。
 
-### 1-2（unreleased）
+### 1-2（2019/1/1）
 
-将会修正 1-1 已知的所有错误和可改进。
+* 修正了 1-1 版本 2018 年 11 月前已知的所有勘误。
+* 前言开始的 GitHub 仓库数据更新。
+* 前言最后添加了初稿被删掉的后记（稍作修改）。
+* 封底的作者简介下面添加了勘误页面网址。
+* 前言和附录均添加了勘误页面网址。
+* 完善可改进实现内的多处内容，具体见可改进实现文件。
+* 修正了 42 处断行连字符错误。
+
+### 1-3（大约为 2019/4/1）
+
+* 修正了 1-2 版本 2019 年 4 月前已知的所有勘误。
+* 前言开始的 GitHub 仓库数据更新。
+* 前言添加“关于彩蛋”一节。
+* 完善可改进实现内的多处内容，具体见可改进实现文件。
+* 前言、附录和封底添加 HelloFlask 论坛 URL。
+
 
 ## 电子书变更
 
-这里记录了不同版本的[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)实体版的变动记录。
+这里记录了不同版本的[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)电子版的变动记录。
 
 ### 1.0（2018/8/24）
 
@@ -56,6 +73,15 @@
 
 *如果没有更新提醒，请联系各平台客服更新文件。*
 
-### 3.0 (纸书1-2发布时)
+### 3.0 (2019/1/1)
 
-和纸书同步，修正所有已知的错误。
+和纸书第 1 版第 2 次印刷内容同步，修正大量笔误和排版错误。
+
+*如果没有更新提醒，请联系各平台客服更新文件。*
+
+### 4.0 (日期待定)
+
+和纸书第 1 版第 3 次印刷（1-3）内容同步，修正大量笔误和排版错误。
+
+*如果没有更新提醒，请联系各平台客服更新文件。*
+
