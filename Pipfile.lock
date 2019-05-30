@@ -67,19 +67,11 @@
         },
         "flask-ckeditor": {
             "hashes": [
-<<<<<<< HEAD
-                "sha256:b9e5f4b54058dafe2b2b6ecd7e94f2446c98d695a36fa945b4c8c2befb96536a",
-                "sha256:ca65fd12b50ce3112c314ca309fa42d1456556f98e34bac35e043b831ccb1fde"
-            ],
-            "index": "pypi",
-            "version": "==0.4.2"
-=======
                 "sha256:327ad60c3787d96cdc579ce04c284d33343802d3b7422ba998aadbbdee6756f1",
                 "sha256:8d91ee747473dc4e6e0dc166fd71b3136b7d388de757731c019fad835d776c8e"
             ],
             "index": "pypi",
             "version": "==0.4.3"
->>>>>>> 926b2a592704a183af7fd179026df2837765cbc5
         },
         "flask-debugtoolbar": {
             "hashes": [
@@ -197,11 +189,19 @@
         },
         "sendgrid": {
             "hashes": [
+<<<<<<< HEAD
                 "sha256:97eb356ea44a18a03e6fe99f02b7942445be306a50f73a7dd35471fe15cc0094",
                 "sha256:9e9d3d75602b8853f174ec959d1af1ac168cd361cbcafc81285fa8c183f7a505"
             ],
             "index": "pypi",
             "version": "==5.6.0"
+=======
+                "sha256:0fcd4d093355d3880438400886f7b2a132e5e47070ef412f46558c96734493f6",
+                "sha256:36249ab8a14012bf6fb334b75ab9fdf9260ed014149f7f3183a64fa1a7cfa265"
+            ],
+            "index": "pypi",
+            "version": "==5.3.0"
+>>>>>>> cf1dec6c77a4bb6c4a502324bf6395ec15c7f846
         },
         "six": {
             "hashes": [

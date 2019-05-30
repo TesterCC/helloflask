@@ -4,11 +4,11 @@
 
 如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
 
-最后更新：2019/3/9
+最后更新：2019/3/17
 
 ## 勘误贡献者列表
 
-统计时间：2018/3/7（排名不分先后）
+统计时间：2019/4/22（排名不分先后）
 
 * @JustALee https://github.com/JustALee
 * @meizhaohui 梅朝辉 https://github.com/meizhaohui
@@ -44,6 +44,10 @@
 * @zhangqihong 张启宏 https://github.com/zhangqihong
 * @bbbbx Venus https://github.com/bbbbx
 * @xmboy 小麦波音 https://github.com/xmboy
+* @Zero-Midea Zero-Midea https://github.com/Zero-Midea
+* @yeshan333 Mr.Ye https://github.com/yeshan333
+* @hp66722667 iceman！ https://github.com/hp66722667
+* @jasonqiao36 Jason Qiao https://github.com/jasonqiao36
 * ……
 
 另外还有通过 QQ、Telegram 和 Email 反馈勘误的读者，不方便索引，这里没有一一列出。感谢你们的贡献！
@@ -83,18 +87,28 @@
 | 2.5.1 P57 最后一个代码块中的URL规则 | /do_something | /do-something | 与源码不符 19.03.08 |
 | 2.5.4.1.(2) P67 “攻击示例”小节第3段文字第2行 | 设为 “';drop table users; --” | 设为 “';drop table students; --” | 笔误 18.11.2 |
 | 3.4.3 P99-P100 每段正文中（共三处） | get_flashed_message() | get_flashed_messages() | 笔误 19.03.09 |
+| 4.2.1 P108 第一段正文第一行 | name | username | 与实际项目不符 19.03.10 |
 | 4.2.3 P110 代码清单4-2最后1行 | `'login.html'` | `'basic.html'` | 笔误 18.9.28 |
 | 4.3.1 P112 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处长度为“最佳实践” |
 | 4.3.1 P113 代码清单4-5第1行 | `'/'` | `'/basic'` | 笔误 18.10.18 |
-| 4.3.1 P115 第 2 小节的代码块第 5 行 | `Length(8, 128)` | `Length(6, 128)` | 前后不一致（1-3 重印时需要反过来调整另外 3 处），18.12.28 |
-| 4.4.4.3.(3)第6个代码块下正文第2行 P127第2个代码块下正文第2行 | | 这个uploads视图 | 这个get_file视图 | 笔误 18.10.27 |
+| 4.3.2.2 P115 第 2 小节的代码块第 5 行 | `Length(8, 128)` | `Length(6, 128)` | 前后不一致（1-3 重印时需要反过来调整另外 3 处），18.12.28 |
+| 4.3.2.3 P115 第二段正文第一行 | basic_form 视图 | basic 视图 | 笔误 18.03.10 |
+| 4.3.2.3 P115 下方代码块最后一行第一个参数 | `'forms/basic.html'` | `'basic.html'` | 笔误 19.03.10 |
+| 4.3.3 P117 正文最后第二行 | 长度小于6 | 长度小于8 | 与实际项目不符 图4-4同理 19.03.10 |
+| 4.4.4.3.(3) P127 第四段正文第二行 | 这个uploads视图 | 这个get_file视图 | 笔误 18.10.27 |
+| 4.4.4.3.(3) P127 第五段正文第二行 | ...模板**中**将从 session 获取... | ...模板将从 session **中**获取... | 句子不通顺 19.03.11 |
 | 4.4.4.4 P128 代码清单4-16 | | “检查文件类型”注释下第一行多余缩进4格 | 笔误 18.10.18 |
 | 5 P139 第 1 个代码块 | | `$ flask run` 上面添加一行 `$ flask initdb  # 初始化数据库，后面会详细介绍` | 疏漏 19.1.5 |
+| 5.1.2.1 P140 记录的文档表示的第四行 | `sex: "Male"` | `sex: "Male",` | 标点缺失 19.03.12 |
+| 5.2 P141 第一个SQL代码块第三行 | | 去除末尾的**,**逗号 | 标点错误 19.03.12 |
+| 5.3.3 P146 代码清单5-3下方正文 | flask inintdb | flask initdb | 笔误 19.03.12 |
 | 5.4.1.1 P147 ”Create“小节第1个代码块第4行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，漏掉转义符号 |
 | 5.4.1.2 P150 表5-7下的第1个代码块 | `Note.body='SHAVE'` | `Note.body == 'SHAVE'` | 代码错误，少了1个等号 18.9.22 |
 | 5.4.2 P153 代码清单 5-5 | | 删掉第 3 行，最后一行删除括号中的`, form=form` | 代码未更新 18.12.24 |
 | 5.4.2 P155 代码清单 5-8 第 3 行 | `DeleteForm()` | `DeleteNoteForm()` | 代码未更新 18.12.24 |
+| 5.5.2 P158 代码清单 5-10 第四行第一个参数 | `db.String(70)` | `db.String(20)` | 与源码不符 19.03.13 |
 | 5.5.2.3 P160 ”建立关系“小节第1个代码块 | | 第2行插入`ham.author_id = 1` | 省略步骤，可加可不加 18.9.22 |
+| 5.5.2.4 P162 代码清单5-11第3行 | `db.String(70)` | `db.String(64)` | 与源码不符 19.03.15 |
 | 5.5.2.4 P162 代码清单5-11第8行 | `title = ` | `name = ` | 笔误 18.9.26 |
 | 5.5.2.4 P163 ”建立双向关系“小节第3个代码块第6行 | `it.writer = writer` | `it.writer = king` | 笔误 18.9.26 |
 | P164 第 2 段第 2 行和第 3 行两处 | backref() 函数 | db.backref() 函数 | 优化 19.3.7 |
@@ -104,15 +118,29 @@
 | 5.5.4 P165 代码清单5-14后面的代码块第8行 | `<Capital 1>` | `<Capital u'Beijing'>` | 笔误 |
 | 5.5.4 P166 代码清单5-14后面的代码块第10行，166页第2行 | `u'China'` | `<Country u'China'>` | 笔误 |
 | 5.5.4 P166 代码清单5-14后面的代码块第11行，166页第3行 | `name'Tokyo'` | `name='Tokyo'` | 笔误 18.9.26 |
+| 5.5.5 P167 图 5-8 中 student 和 association 表之间的箭头 | 两张表的 id 不对应 | | 错误 19.03.15 |
+| P167 图5-8下第二段最后一句 | 设为关联表名称 | 设为关联表对象或是字符串形式的关联表名称 | 19.4.23 |
+| P170 附注段落最后一句 | | 你可以在命令行中输入flask db --help 查看 db 命令所有可用的子命令和说明。| 19.4.23 |
+| 5.7.1 P172 下方代码块第三行 | 与源码不符 | 去掉`, unique=True`约束 | 与源码不符 19.03.15 |
+| 5.7.1 P173 上方代码块第3行 | `relationship('Comment', cascade='save-update, merge, delete')` | `db.relationship('Comment', back_populates='post', cascade='save-update, merge, delete')` | 笔误 19.03.15 |
+| 5.7.1 P173 上方代码块第3行 | `relationship('Comment', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all')` | 笔误 19.03.15 |
+| 5.7.1 P174 倒数第2个代码块第3行 | `relationship('Comment', cascade='all, delete-orphan')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 19.03.15 |
 | 5.7.1.2 P174 ”delete-orphan“小节上面第1个代码块第1行 | `Post.quer2y.get(2)` | `Post.query.get(2)` | 审校错误 |
+| 5.7.2 P176-P177 正文中4处、提示段落中1处 | `listen_for()` | `listens_for()` | 笔误 19.03.15 |
 | 5.7.2 P176 代码清单5-18下第1行 | targe | target | 笔误 18.9.28 |
 | 5.7.2 P177 最后1个代码块上面 | 参数name | 参数named | 笔误 18.9.28 |
 | 5.7.2 P177 最后1段提示文字 | 监听函数时， | 监听函数。这时 | 编辑瞎改稿子 18.9.28 |
 | 5.7.2 全章节多处 | listen_for | listens_for | 笔误 18.9.28 |
+| 6 P182-P191 全章节多处 | 代码清单中发送邮件的函数名与源码不一致 | 见源码 | 19.03.17 |
 | 6.1.1 P181 代码清单6-1 | | 第9-13行末尾漏掉分割参数的逗号 | 笔误 18.10.27 |
+| 6.2.3.3 P187下方代码块 P188 代码清单6-4 | `os.environ.get()` | `os.getenv()` | 19.03.17 |
+| 6.2.3.3 P188 代码清单6-4 | 整段代码和源码有很多不同 | 见源码 | 19.03.17 |
+| 6.3.2 P190 第一段正文 | HMTL | HTML | 笔误 19.03.17 |
 | 7.3.2 P208 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 P208 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 18.9.28 |
 | 7.4.3 P213 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 18.12.5 |
+| P225 下面代码块第 10 行 | 去掉中部的 `class="next ` |
+| P269 | 去掉页面中部的提示段落 |
 | 8.1.3 P229、P231 代码清单8-2、8-4 | | 单个蓝本变量名称均应为foo_bp形式，比如admin应为admin_bp | 笔误 18.9.24 |
 | 8.2.1.1.(4) P235 代码清单8-7后面第1个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
 | 8.2.3 P247 代码清单8-19第2行 | `from wtforms` | `from wtforms.validators` | 笔误 18.10.27 |
@@ -165,6 +193,7 @@
 | 10.1.4 P425 第一个代码块第 6 行 | `jsonify(message='Invalid item body.'), 400` | `return jsonify(message='Invalid item body.'), 400` | 笔误 19.1.20 |
 | 10.3.3 P447 第 1 小节/该页最后一个代码块 | `... import api` | `... import api_v1` | 笔误 18.12.28 |
 | 10.3.3 P447 第 1 小节/该页最后一个代码块 | `csrf.exempt(api)` | `csrf.exempt(api_v1)` | 笔误 18.12.28 |
+| 第10章 P451 | `class Item(MethodView)` | `class ItemAPI(MethodView)` | 19.4.23 |
 | 10.3.3 P453 代码清单10-13第一行中的methods参数 | `methods=['GET', 'POST']` | `methods=['GET']` | 与原定的方法不一致 18.12.28 |
 | 10.3.3 P453 代码清单10-13第二行中的第一个参数 | `'/token'` | `'/oauth/token'` | 与实际项目不一致 18.12.28 |
 | 10.3.3 P453 代码清单10-13第二行中的methods参数 | `methods=['GET']` | `methods=['POST']` | 与实际项目不一致 18.12.28 |
@@ -188,11 +217,12 @@
 | 11.5.5 P517 代码清单11-17第6行 | `data.name` | `data.nickname` | 笔误 18.12.30 |
 | 11.5.5 P517 代码清单11-17第7行 | `icon: ...` | `icon: data.gravatar` | 笔误 18.12.30 |
 | 11.5.5 P518 最后1个代码块第5行 | `'_message.html'` | `'chat/_message.html'` | 笔误 18.12.30 |
-| 11.5.5 P518 最后1个代码块第6行 | `message_body` | `html_message` | 笔误 18.12.30 |
+| 11.5.5 P518 最后1个代码块第6行字典的值 | `message_body` | `html_message` | 笔误 18.12.30 |
 | 12.3.1 P526 代码清单12-1 | | setUp方法最后面追加一行代码`self.client = app.test_client()` | 代码缺失 19.01.05 |
 | 12.3.2 P527 提示段落下方的正文第3行 | assertEqual() | assertTrue() | 笔误 19.01.05 |
 | 12.3.2 P527 代码清单12-3 test_404_page方法的注释 | # 测试 400 错误页面 | # 测试 404 错误页面 | 笔误 19.01.05 |
 | 12.3.3 P534 代码清单12-6最后1个导入语句 | `from bluelog.models import User` | `from bluelog.models import Admin` | 笔误 19.01.06 |
+| 540 注释优化 | | 「定位输入按钮」改为「定位输入框」，按下按钮改为「按下回车键」| 19.4.23 |
 | 13.1.2 P550 代码清单13-1 | `@app.after_app_request` | `@app.after_request` | 笔误 19.01.06 |
 | 13.1.2 P550 代码清单13-1 | | 两处current_app改为app | 笔误 19.01.06 |
 | 13.3 P557 命令行命令 | `$ cd cache` | `$ cd assets` | 笔误 19.01.06 |
@@ -215,6 +245,7 @@
 | 15.6.1 P615 代码清单15-7和代码清单15-8中Share类的create方法参数 | `addition_class=None` | `addition_class=''` | 与实际项目不符 19.01.21 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 18.12.31 |
+| P644 第一个代码块最后一行 | `name` | `name.encode()` | 19.4.23 |
 | 16.4.2 P649 最后1行 | Flask.route()是Flask类的类方法 | Flask.route()是Flask类的实例方法 | 笔误 19.1.1 |
 | 16.4.2.1 P650 最后第2段正文第1行 | view_function | view_functions | 笔误 19.01.21 |
 | 16.4.2.2 P653 代码清单16-15中的注释 | 出于 | 处于 | 笔误 19.01.21 |
@@ -324,20 +355,23 @@ def validate_username(self, field):
 | 4.2.3 P110 代码清单4-3第4行 | `{{ from.password.label }}{{ form.password }}<br>` | `{{ from.username.label }}<br>{{ form.username }}<br>` | 改进 18.11.5 |
 | 4.3.3 P117 代码清单4-7第4行 | `form.username()` | `form.username` | 笔误。此处的括号可有可无，去掉以保持风格上的统一 18.9.24 |
 | 4.4.4.1 P123 代码清单4-13第1行 | `flask wtf` | `flask_wtf` | 审校错误 18.9.24 |
-| 4.4.4.4 P128 代码清单4-16上面的第1个代码块第3行 | | 缺少右侧关闭括号 | 笔误 18.10.18 |
 | 4.4.4.1 P123 代码清单4-13第3行 | | 字符间距过大。 | 排版错误 19.1.5 |
+| 4.4.4.4 P128 第一个代码块第三行 | `('Upload Image', validators={DataRequired()}` | `('Upload Image', validators=[DataRequired()])` | 标点错误 19.03.11 |
 | 4.4.5.2 提示段落 | https://flask-ckeditor.readthedocs.io/configuration.html | https://flask-ckeditor.readthedocs.io/en/latest/configuration.html | 笔误 19.1.5 |
 | 4.4.5 P131 代码清单4-19下正文段落第3行 | `Ture` | `True` | 笔误 18.11.5 |
+| 4.4.7 P134 代码清单4-23最后两行 | 两行间的行距过大 | | 排版错误 19.03.12 |
+| 4.4.7 P135-P136 两个HTML代码块中三处标题标签 | `<h2></h2>` 标签 | 替换为`<h3></h3>` 标签 | 与源码不符 19.03.11 |
 | 5.3.1 P143 表5-2最后1行 | SQlite | SQLite | 大小写错误 18.10.27 |
 | 5.3.3 P146 第2个代码块 | | 开头可添加一行导入`from app import Note` | 更完善 18.10.18 |
 | P149 表 5-6 左边一列第 1 行和第 5 行两处 | ident | id | 优化 19.3.5 |
 | P150 表 5-7 左边一列的标题 | 查询过滤器名称 | 过滤方法 | 优化 19.3.5 |
 | 5.5.2 P159 表5-4下的注意段落第2行 | Flask-SQLlchemy | Flask-SQLAlchemy | 笔误 18.10.27 |
-| 5.5.2 P160 正文最后一行、P161 第一行 | Aritcle | Article | 笔误 18.12.24 |
+| 5.5.2 P160-P161 正文、提示段落中共四处 | Aritcle / aritcles | Article / articles | 笔误 19.03.13 |
+| 5.7.1.1 P173 中部代码块 | `comment1 =Comment()`/`comment2 =Comment()` | = 等号右边增加一个空格 | 19.03.15 |
 | 5.8 P177 最后1行 | 本章要介绍的 | 本章介绍的 | 笔误 18.9.28 |
 | 6.1.3 P183 代码清单6-3第9行 | `return redirect(url_for('idnex'))` | `return redirect(url_for('index'))` | 笔误 18.10.27 |
 | 6.2 P183 6.2及6.2.1章节标题以及目录共**4处** | SendGird | SendGrid | 笔误 18.10.27 |
-| 7.2 P202 代码清单 7-3、7-4、7-7 | 补全路径，相应加入 sayllo/ 和 templates/ | 19.2.2 |
+| 7.2 P202 代码清单 7-3、7-4、7-7 | 补全路径，相应加入 sayhello/ 和 templates/ | 19.2.2 |
 | 7.2.3.1 P202 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.2.3 P204 代码清单7-5后面的代码块第4行 | | `messages = Message.query.order_by...`向后缩进1格 | 缩进 19.01.11 |
 | 7.3.1 P207 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 18.11.17 |
@@ -388,6 +422,8 @@ def validate_username(self, field):
 | 10.2.5 P438 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
 | 10.3.1.4 P443 “10.3.2”小节上面段落倒数第3行 | RSET | REST | 笔误 |
 | 10.3.3.5 P453 代码清单10-13下面的提示段落最后1行 | flask-restless | Flask-Restless | 大小写错误 |
+| P453 正文第二行 | 因为 API 的无状态特性，我们不能再使用 Flask-Login 实现认证功能 | 因为客户端不一定是浏览器，我们一般不会使用 Flask-Login 实现认证功能 |
+| P552 表 13-2 下面段落 | 第二句话结尾分号前追加括号文字“（可以使用 CACHE_DIR 配置变量指定缓存文件存储目录）” |
 | 11.1 P476 目录结构示意图 | | blueprints目录向左缩进一级 | 笔误 18.12.28 |
 | 11.4.4 P507 正文第一行 | ture | true | 笔误 18.12.29 |
 | 12.3.2 P527 代码清单12-2第7行 | test_app_exsit | test_app_exist | 拼写错误 |
@@ -460,6 +496,7 @@ from sayhello.models import Message
 * P580 页面中部
 * P584 页面中部
 * P633 第1行
+* P139 注意段落
 
 关于URL长度限制的详情可以参考[WWW FAQs: What is the maximum length of a URL?](https://www.boutell.com/newfaq/misc/urllength.html)。
 
