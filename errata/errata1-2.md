@@ -1,9 +1,5 @@
 
-## 临时勘误
-
-为重印新版本暂存的勘误，未来或许会合并到 errata.md 里。
-
-### 1-2（第 1 版第 2 次印刷）
+## 第 1 版第 2 次印刷勘误
 
 发布时间：2019/1/1
 
@@ -37,7 +33,7 @@
 | 7.3.1 P207 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 18.11.17 |
 | 7.4.3 P213 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 18.12.5 |
 | 7.5 P214 该页（节）最后 2 个代码块的最后 1 行 | | 两处均向左缩进 4 格，和上面对齐 | 排版错误 18.12.6 |
-| P225 下面代码块第 10 行 | 去掉中部的 `class="next ` |
+| P255 下面代码块第 10 行 | 去掉中部的 `class="next ` |
 | P269 | 去掉页面中部的提示段落 |
 | 8.2.1 P237 代码清单 8-8 倒数第 3 行 | | 删除这一行 | 后续内容前置 19.1.13 |
 | P263 代码清单 8-29 第 2 行 | `{{ comments\|length }} Comments` | `{{ pagination.total }} Comments <!-- 使用 pagination.total 获取分页条目总数 -->` | 优化 19.3.5 |
@@ -277,6 +273,7 @@ def validate_username(self, field):
 | 14.3.4 P569 第一段正文下方的代码 | `app.logger.warning('A wraning message.')` | `app.logger.warning('A warning message.')` | 笔误 19.01.21 |
 | 14.3.5 P572 代码块 wsgi.py 定义 | 导入语句补充 `import os` | 19.2.2 |
 | P578 第 1 个附注段落 | GitHub的免费账户只能创建公开仓库，为此你可以考虑使用BitBucket（https://bitbucket.org），它提供不限数量的免费私有仓库。 | GitHub（https://github.com） 和 BitBucket（https://bitbucket.org） 均支持免费创建私有仓库，你可以在创建仓库时进行选择。 | 更新 19.3.5 |
+| 14.4.6 P583 正文倒数第二段 |当使用反向代理服务器后，......  | | 多余，与 P581 正文第二段落重复 19.07.26|
 | 16.5 P680 附注第2行 | Pocco风格指南 | Pocoo风格指南 | 笔误 19.01.21 |
 | 16.4.2.1 P650 最后第2段正文第1行 | view_function | view_functions | 笔误 19.01.21 |
 | 16.4.2.2 P653 代码清单16-15中的注释 | 出于 | 处于 | 笔误 19.01.21 |
